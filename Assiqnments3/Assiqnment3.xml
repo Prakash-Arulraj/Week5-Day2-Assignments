@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="leafTaps">
+	<parameter name="url" value="http://leaftaps.com/opentaps"></parameter>
+	<parameter name="username" value="DemoSalesManager"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	<test thread-count="5" name="leads Using Excel">
+		<classes>
+			<class name="week5.day2.Assiqnments3.DeleteLeadExcel" />
+			<class name="week5.day2.Assiqnments3.DuplicateLeadExcel" />
+			<class name="week5.day2.Assiqnments3.EditLeadExcel" />
+			<class name="week5.day2.Assiqnments3.CreateLeadExcel" />
+			<class name="week5.day2.Assiqnments3.MergeLeadExcel" />
+		</classes>
+	</test> <!-- leads Using Excel -->
+</suite> <!-- leafTaps -->
